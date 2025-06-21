@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css" />
+     <title>Live Clock with Date</title>
+  <style>
+    #clock {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d6336c;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div id="clock">Memuatkan masa...</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // Format 2 digit
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    // Format tarikh
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateString = now.toLocaleDateString('ms-MY', options);
+
+    const timeString = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerText = "⏰ " + timeString + " | " + dateString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+  </head>
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1><i class="fas fa-sparkles"></i> My Experience <i class="fas fa-camera-retro"></i></h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+       <a href="index.html">Home</a> |
+    <a href="aboutme.html">Biodata</a> |
+    <a href="experience.html">Experience</a> |
+    <a href="education.html">Education</a> |
+    <a href="gallery.html">Gallery</a> |
+    <a href="contact.html">Contact</a> 
+    </nav>
+
+ <section id="experience">
+  <h2>🌸 Work Experience</h2>
+
+  <table style="width:100%">
+   <tr style="background-color: #c28ea3;">
+        <th style="padding: 10px;">IMAGE</th>
+        <th style="padding: 10px;">INFORMATION</th>
+      </tr>
+  <tr>
+   <td style="padding: 10px; text-align: center;">
+     <img src="aeoncherasselatan.png" alt="Workplace" usemap="#workmap" width="300" height="250">
+
+
+    </td>
+
+        <td style="padding: 10px; text-align: left; ">
+          <h3>Work at AEON Cheras Selatan</h3>
+          <p><strong>Location:</strong> Cheras, Selangor</p>
+          <p><strong>Period:</strong>  July 2022</p>
+          <ul>
+            <li>Handling payment transaction</li>
+            <li>Recording sales and issuing receipts</li>
+            <li>Maintaining the cashier counter</li>
+          </ul>
+          <a href = "https://aeonmallmy.com/page/mall/aeon-mall-cheras-selatan">Click here to know about AEON Cheras Selatan</a> 
+        </td>
+  </tr>
+  <tr> 
+  <td style="padding: 10px; text-align: center;">
+    <img 
+      src="https://live.staticflickr.com/65535/53701620373_890ed12333.jpg" 
+      alt="Poster Design" 
+      style="width: 90%; max-width: 400px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+    />
+  </td>
+  <td style="padding: 10px; text-align: left;">
+    <h3>Intern at Suruhanjaya Perkhidmatan Pendidikan</h3>
+    <p><strong>Location:</strong> Wilayah Persekutuan Putrajaya</p>
+    <p><strong>Period:</strong> 10th February - 4th February 2025</p>
+    <ul>
+      <li>The officer is responsible for managing and maintaining the official information systems</li>
+      <li>Ensure that the system is always updated, secure, and functioning smoothly</li>
+    </ul>
+    <a href="https://www.spp.gov.my/" target="_blank">Click here to know about SPP</a> 
+  </td>
+</tr>
+
+</table>
+</section>
+
+<div id="body_content">
+        <h1 h1 style="text-align:center;">
+        <span STYLE="color: rgb(23, 0, 128);">My Table In WorkPlace</span></h1>
+      </div>
+      <h6 style="text-align:center;">
+        <p>Click on the computer, book, or the cup of coffee to go to a new page and read more about the topic:</p>
+        <img src="https://previews.123rf.com/images/dolgachov/dolgachov1707/dolgachov170700590/81599349-laptop-phone-and-other-office-stuff-on-table.jpg" alt="Workplace" usemap="#workmap" width="780" height="520">
+        </h6>
+        
+        <h2 style="text-align:center;">
+        <map name="workmap">
+          <area shape="rect" coords="224,98,499,368" alt="Computer" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDwOC6_XLG0gr4PCKqb1CzYd1SzD6yb39CkA&s">
+          <area shape="rect" coords="14,232,222,462" alt="Book" href="https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_640.jpg">
+          <area shape="rect" coords="533,285,644,398" alt="Cup of coffee" href="https://colombiancoffee.us/cdn/shop/articles/tips-to-recognize-good-quality-coffee-424970.png?v=1713377616&width=1024">
+        </map>
+        </h2>
+
+                
+<!-- Footer -->
+    <footer>
+        <p>Prepared by Nurain Izzati. All content is original and for educational use only. 💖</p>
+    </footer>
+
+
+</body>
+</html>

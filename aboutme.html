@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biodata </title>
+  <link rel="stylesheet" href="style.css" />
+   <title>Live Clock with Date</title>
+  <style>
+    #clock {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d6336c;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div id="clock">Memuatkan masa...</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // Format 2 digit
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    // Format tarikh
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateString = now.toLocaleDateString('ms-MY', options);
+
+    const timeString = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerText = "⏰ " + timeString + " | " + dateString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+  </head>
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ 
+<body>
+  <header>
+    <h1>Nurain Izzati's Page 🌸</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="aboutme.html">Biodata</a> |
+    <a href="experience.html">Experience</a> |
+    <a href="education.html">Education</a> |
+    <a href="gallery.html">Gallery</a> |
+    <a href="contact.html">Contact</a> 
+  </nav>
+
+  <section class="biodata-section">
+    <h2>My Biodata</h2>
+    <div class="biodata-container">
+      <img src="NurainIzzati.png" alt="Nurain Izzati" class="profile-img">
+      <div class="details-container">
+        <p><strong>Name:</strong> Nurain Izzati binti Ahmad Zahari</p>
+        <p><strong>Age:</strong> 21</p>
+        <p><strong>Gender:</strong> Female</p>
+        <p><strong>Status:</strong> Single</p>
+        <p><strong>Date of Birth:</strong> 2nd January 2004</p>
+        <p><strong>Place of Birth:</strong> HUKM, Kuala Lumpur</p>
+        <p><strong>Address:</strong> No.74, Jalan Suakasih 1/1, Bandar Tun Hussein Onn, 43200, Cheras, Selangor</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="hobbies-section">
+    <h2>My Hobbies 🎨</h2>
+    <div class="hobbies-container">
+      <div class="hobby-box">
+        <img src="neflix.png" alt="Watching Movies">
+        <p>Watching Movies 📺</p>
+        <ol>
+          <li>Fantasy, action, thriller, and romance genres.</li>
+          <li>International films: Japan, Korea, China, US, Spain, Turkey.</li>
+        </ol>
+      </div>
+      <div class="hobby-box">
+        <img src="music.png" alt="Listening to Music">
+        <p>Listening to Music 🎧</p>
+        <ol>
+          <li>Genres: hip hop, pop, indie, retro pop, classical.</li>
+        </ol>
+        <iframe width="100%" height="80" src="https://www.youtube.com/embed/0BdlKkvjEgA" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="hobby-box">
+        <img src="read.png" alt="Reading">
+        <p>Reading 📚</p>
+        <ol>
+          <li>Manga, manhwa, and novels.</li>
+          <li>Genres:  fantasy, angst.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="comfort-section">
+    <h2>Favourite Dessert 🥛🍦</h2>
+    <div class="comfort-container">
+      <img src="https://www.southernliving.com/thmb/HFXfirNv58YxjV2uWi4Ima6rkD4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2665601_ErinN_0213-2000-7b88f1a2e1bd40bba7070fc01476cf3d.jpg" alt="Food">
+      <img src="https://www.tasteofhome.com/wp-content/uploads/2025/03/Easy-Chocolate-Eclair-Cake_EXPS_FT25_52876_JR_0225_8.jpg" alt="Food">
+      <img src="https://static.toiimg.com/thumb/62836587.cms?width=1200&height=900" alt="Food">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrIFldboRx55MlKY5HhIF1oT2m1nDHdJPp4w&s" alt="Food">
+      <img src="https://www.southernliving.com/thmb/TA7mmmCo5TRPpLg_3u3wCxB49_8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2288902_commu15940_0_0_1_0-1-51a3875f6ea24c72861064c689b9eae6.jpg" alt="Food">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-2IoL3zEKMrvV_R8g3ynjw2scg5N1N5QAg&s" alt="Food">
+      
+
+    </div>
+<br><br>
+    <h2>Favourite Drink 🥛🍦</h2>
+    <div class="comfort-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiZou6hQm7pTit-Fc107zrTUIlUDipgFULug&s" alt="Drink">
+      <img src="https://rita.com.vn/images/news/2018/watermelonjuice.webp" alt="Drink">
+      <img src="https://www.thespruceeats.com/thmb/_Vv-p36A-noxy4hl8is7P2xoP3s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/StrawberrySmoothie-TheSpruce-20561a0914f44c8f9a8a33fe67b529d9.jpg" alt="Drink">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo1T_b1oR18mi7BSk5EKZiu4fv5Pf4-GxdRAvL-oRzLDv_Y13KKAEApghHNcmTcdvnmh8&usqp=CAU" alt="Drink">
+      <img src="https://rita.com.vn/images/news/2018/Kiwi-Juice.webp" alt="Dessert">
+      <img src="https://www.thespruceeats.com/thmb/_Vv-p36A-noxy4hl8is7P2xoP3s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/StrawberrySmoothie-TheSpruce-20561a0914f44c8f9a8a33fe67b529d9.jpg" alt="Dessert">
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>Page created with love by Nurain Izzati 💖</p>
+  </footer>
+</body>
+</html>
