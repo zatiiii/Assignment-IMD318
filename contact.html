@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div id="clock">Memuatkan masa...</div>
+<div id="clock">Loading time</div>
 
 <script>
   function updateClock() {
@@ -26,12 +26,12 @@
     let minutes = now.getMinutes();
     let seconds = now.getSeconds();
 
-    // Format 2 digit
+   
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    // Format tarikh
+   
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const dateString = now.toLocaleDateString('ms-MY', options);
 
@@ -56,7 +56,7 @@
 
     <!-- Header -->
     <header>
-        <h1><i class="fas fa-sparkles"></i> My Experience <i class="fas fa-camera-retro"></i></h1>
+        <h1><i class="fas fa-sparkles"></i> Contact <i class="fas fa-camera-retro"></i></h1>
     </header>
 
     <!-- Navigation Menu -->
@@ -101,10 +101,9 @@
  
 
   <section class="form-section">
-    <!-- 🖼️ Thumbnail Gambar -->
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5zaDckWblh1WuaPLdAbsSKqUIyZ1hKZ-UtQ&s" alt="Thumbnail">
 
-    <h2>📩 Borang Maklumat</h2>
+    <h2>📩 Information Form</h2>
 
     <form onsubmit="return submitForm()">
       <label for="nama">Name:</label>
@@ -123,15 +122,15 @@
   <script>
     function submitForm() {
       alert("Thank you! Your respond has been sent.");
-      return false; // elak reload page
+      return false; 
     }
   </script>
   </section>
+
    <!-- Footer -->
 <footer>
     <p>Prepared by Nurain Izzati. Educational Use Only. All content is original. 💖</p>
 </footer>
-
 
 
 </body>
