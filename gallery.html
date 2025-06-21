@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div id="clock">Memuatkan masa...</div>
+<div id="clock">Loading time</div>
 
 <script>
   function updateClock() {
@@ -26,12 +26,12 @@
     let minutes = now.getMinutes();
     let seconds = now.getSeconds();
 
-    // Format 2 digit
+    
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    // Format tarikh
+    
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const dateString = now.toLocaleDateString('ms-MY', options);
 
@@ -96,8 +96,8 @@
     <h3 style="text-align:center;">My Favourite Playlist</h3>
     <div style="text-align:center;">
         <audio controls>
-            <source src="C:\Users\user\Downloads/sza_saturn.mp4" type="audio/ogg">
-            <source src="C:\Users\user\Downloads/sza_saturn.mp4" type="audio/mpeg">
+            <source src="sza_saturn.mp4" type="audio/ogg">
+            <source src="sza_saturn.mp4" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -107,8 +107,8 @@
 <section>
     <div style="text-align:center;">
         <audio controls>
-            <source src="C:\Users\user\Downloads/she_selenagomez.mp4" type="audio/ogg">
-            <source src="C:\Users\user\Downloads/she_selenagomez.mp4" type="audio/mpeg">
+            <source src="she_selenagomez.mp4" type="audio/ogg">
+            <source src="she_selenagomez.mp4" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
